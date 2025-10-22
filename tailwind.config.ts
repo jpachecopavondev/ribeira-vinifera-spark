@@ -13,6 +13,15 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ["Playfair Display", "serif"],
+        sans: ["Inter", "sans-serif"],
+      },
+      backgroundImage: {
+        "wine-gradient": "var(--wine-gradient)",
+        "vineyard-gradient": "var(--vineyard-gradient)",
+        "earth-gradient": "var(--earth-gradient)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
