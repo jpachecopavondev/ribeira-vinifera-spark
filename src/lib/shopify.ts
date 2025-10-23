@@ -3,7 +3,7 @@ import { toast } from "sonner";
 const SHOPIFY_API_VERSION = '2025-07';
 const SHOPIFY_STORE_PERMANENT_DOMAIN = 'ribeira-vinifera-spark-r8dzu.myshopify.com';
 const SHOPIFY_STOREFRONT_URL = `https://${SHOPIFY_STORE_PERMANENT_DOMAIN}/api/${SHOPIFY_API_VERSION}/graphql.json`;
-const SHOPIFY_STOREFRONT_TOKEN = 'e57e6b14d6eb84f56e4a8799e81d91a6';
+const SHOPIFY_STOREFRONT_TOKEN = '82ce72f116ef35c621468a8a6ccc4012';
 
 export interface ShopifyProduct {
   node: {
