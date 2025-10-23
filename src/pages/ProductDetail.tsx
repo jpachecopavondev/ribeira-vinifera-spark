@@ -174,25 +174,108 @@ const ProductDetail = () => {
                 {selectedVariant.availableForSale ? "Añadir al carrito" : "No disponible"}
               </Button>
 
-              <div className="border-t pt-6 space-y-4">
-                <h3 className="font-serif text-xl font-semibold">Características</h3>
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <p className="text-muted-foreground">Tipo</p>
-                    <p className="font-medium">Vino tinto</p>
+              <div className="border-t pt-6 space-y-6">
+                <h3 className="font-serif text-2xl font-semibold">Características del Vino</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="flex flex-col items-center p-4 rounded-lg bg-gradient-subtle border border-border/50 hover:border-primary/30 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                      <span className="text-2xl">🍷</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mb-1">Tipo</p>
+                    <p className="font-semibold text-center">Vino Tinto</p>
                   </div>
-                  <div>
-                    <p className="text-muted-foreground">Denominación</p>
-                    <p className="font-medium">Ribeira Sacra</p>
+                  
+                  <div className="flex flex-col items-center p-4 rounded-lg bg-gradient-subtle border border-border/50 hover:border-primary/30 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                      <span className="text-2xl">💪</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mb-1">Cuerpo</p>
+                    <p className="font-semibold text-center text-sm">Ligero a Medio</p>
                   </div>
-                  <div>
-                    <p className="text-muted-foreground">Variedad</p>
-                    <p className="font-medium">Mencía</p>
+                  
+                  <div className="flex flex-col items-center p-4 rounded-lg bg-gradient-subtle border border-border/50 hover:border-primary/30 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                      <span className="text-2xl">🍇</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mb-1">Variedad</p>
+                    <p className="font-semibold text-center">Mencía</p>
                   </div>
-                  <div>
-                    <p className="text-muted-foreground">Graduación</p>
-                    <p className="font-medium">13.5% vol.</p>
+                  
+                  <div className="flex flex-col items-center p-4 rounded-lg bg-gradient-subtle border border-border/50 hover:border-primary/30 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                      <span className="text-2xl">📏</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mb-1">Volumen</p>
+                    <p className="font-semibold text-center">75cl</p>
                   </div>
+                  
+                  <div className="flex flex-col items-center p-4 rounded-lg bg-gradient-subtle border border-border/50 hover:border-primary/30 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                      <span className="text-2xl">📅</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mb-1">Consumo</p>
+                    <p className="font-semibold text-center text-sm">Ahora - 2032</p>
+                  </div>
+                  
+                  <div className="flex flex-col items-center p-4 rounded-lg bg-gradient-subtle border border-border/50 hover:border-primary/30 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                      <span className="text-2xl">🌡️</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mb-1">Alcohol</p>
+                    <p className="font-semibold text-center">12% vol.</p>
+                  </div>
+                  
+                  <div className="flex flex-col items-center p-4 rounded-lg bg-gradient-subtle border border-border/50 hover:border-primary/30 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                      <span className="text-2xl">🪵</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mb-1">Roble</p>
+                    <p className="font-semibold text-center text-sm">Sin influencia</p>
+                  </div>
+                  
+                  <div className="flex flex-col items-center p-4 rounded-lg bg-gradient-subtle border border-border/50 hover:border-primary/30 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                      <span className="text-2xl">🍾</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mb-1">Cierre</p>
+                    <p className="font-semibold text-center text-sm">Corcho Natural</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-t pt-6 space-y-6">
+                <h3 className="font-serif text-2xl font-semibold">Maridaje Recomendado</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="group relative overflow-hidden rounded-lg bg-gradient-to-br from-primary/5 to-secondary/5 p-6 border border-border/50 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
+                    <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">🥩</div>
+                    <h4 className="font-semibold mb-1">Carnes Rojas</h4>
+                    <p className="text-xs text-muted-foreground">Chuletón, cordero asado</p>
+                  </div>
+                  
+                  <div className="group relative overflow-hidden rounded-lg bg-gradient-to-br from-primary/5 to-secondary/5 p-6 border border-border/50 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
+                    <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">🧀</div>
+                    <h4 className="font-semibold mb-1">Quesos</h4>
+                    <p className="text-xs text-muted-foreground">Tetilla, San Simón da Costa</p>
+                  </div>
+                  
+                  <div className="group relative overflow-hidden rounded-lg bg-gradient-to-br from-primary/5 to-secondary/5 p-6 border border-border/50 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
+                    <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">🍝</div>
+                    <h4 className="font-semibold mb-1">Pasta</h4>
+                    <p className="text-xs text-muted-foreground">Ragú, pasta al horno</p>
+                  </div>
+                  
+                  <div className="group relative overflow-hidden rounded-lg bg-gradient-to-br from-primary/5 to-secondary/5 p-6 border border-border/50 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
+                    <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">🍄</div>
+                    <h4 className="font-semibold mb-1">Guisos</h4>
+                    <p className="text-xs text-muted-foreground">Estofados, cocidos</p>
+                  </div>
+                </div>
+                
+                <div className="bg-muted/30 rounded-lg p-4 border border-border/50">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    <span className="font-semibold text-foreground">Temperatura de servicio:</span> 16-18°C. 
+                    Se recomienda abrir la botella 30 minutos antes de servir para que el vino respire y exprese todo su potencial aromático.
+                  </p>
                 </div>
               </div>
             </div>
