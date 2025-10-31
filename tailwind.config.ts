@@ -14,13 +14,24 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ["Playfair Display", "serif"],
+        serif: ["Cormorant Garamond", "Playfair Display", "serif"],
         sans: ["Inter", "sans-serif"],
       },
       backgroundImage: {
         "wine-gradient": "var(--wine-gradient)",
-        "vineyard-gradient": "var(--vineyard-gradient)",
+        "burgundy-gradient": "var(--burgundy-gradient)",
+        "river-gradient": "var(--river-gradient)",
+        "sunset-gradient": "var(--sunset-gradient)",
         "earth-gradient": "var(--earth-gradient)",
+        "gold-accent": "var(--gold-accent)",
+      },
+      boxShadow: {
+        elegant: "var(--shadow-elegant)",
+        glow: "var(--shadow-glow)",
+      },
+      transitionDuration: {
+        smooth: "var(--transition-smooth)",
+        slow: "var(--transition-slow)",
       },
       colors: {
         border: "hsl(var(--border))",
